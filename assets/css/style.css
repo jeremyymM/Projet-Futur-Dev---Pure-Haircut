@@ -110,14 +110,14 @@ p{
 #services .mainbox .box .left p{
     font-size:0.8em ;
     margin: 10px 0px;
-    width: 710px;
+   
 
     
 }
 #services .mainbox .box2 .right p{
     font-size:0.8em ;
     margin: 10px 0px;
-    width: 710px;
+    
 }
 #services .mainbox .box .left .text .coupe1 {
     display: flex;
@@ -165,7 +165,7 @@ p{
     height: 0px;
     content: "";
     width: 3276px;
-    border: 2px dashed #B67D27;
+    border-bottom: #B67D27 dashed;
     margin-left: 4px;
 }
 
@@ -182,13 +182,26 @@ p{
     margin-right:-100%;
     margin-left:1em;
     }
+
+    #services .mainbox .box .left .buttonbox2 #buttonMore{
+        display: none;
+        background: transparent;
+        width: 30%;
+        font-family: "PhosphateRR";
+        background: transparent;
+        border: 0;
+        font-size: 1.5vw;
+        font-weight: 100;
+        color: white;
+        margin-top: 15px;
+    }
 /*section contact*/
 
 
 
 #contact{
     background: radial-gradient(46.73% 85.57% at 3.27% 86.69%, rgba(48, 47, 47, 0.85) 0%, #302F2F 100%);
-    min-height: 100vh;
+    min-height: 128vh;
 }
 #contact .box{
     display: flex;
@@ -197,19 +210,19 @@ p{
 }
 #contact .box2{
     display: flex;
-    height: 50vh;
+    
     
     align-items: flex-start;
 }
 #contact .box .title h2{
-    font-size: 5rem;
+    font-size: 6vw;
 }
 
 
 #contact .box .title{
     display: flex;
     flex-direction: column;
-    margin: 100px 75px;
+    margin: 100px 60px;
     line-height: 5rem;
     width: 100%;
     
@@ -217,7 +230,7 @@ p{
 
 #contact .box .title a{
     color:#B67D27 ;
-    font-size: 1.5rem;
+    font-size: 2vw;
     letter-spacing: 0.2rem;
     
 }
@@ -231,13 +244,17 @@ p{
     align-items: center;
     width: 60%;
 }
-
+#contact .box .image{
+    width: 50%;
+}
 #contact .box .image img{
-    width: 650px;
-    height: 415px;
+    width: 496px;
+    height: 370px;
+    justify-content: flex-end;
 }
 
 /*formulaire*/
+
 
 #contact .box .formulaire form{
     display: flex;
@@ -246,11 +263,12 @@ p{
     justify-content: center;
     align-items: center;
     width: 94%;
-    margin: 0px 20px;
+    margin: 3px 116px;
+    margin-right: 197px;
 }
 
 #contact .box .formulaire form .nom {
-  width: 35%;
+  width: 39%;
     background: transparent;
     border: 2px solid white;
     height: 50px;
@@ -263,6 +281,7 @@ p{
     color: white;
     font-family: "Open Sans";
     font-size: 1rem;
+    margin-left: 10px;
 
 }
 
@@ -288,11 +307,11 @@ p{
     font-size: 1rem;
 }
 #contact .box .formulaire form .prenom{
-    width: 35%;
+    width: 38%;
     height: 50px;
     background: transparent;
     border: 2px  solid white;
-    margin-left: 74px;
+    margin-left: 10px;
     color: white;
     font-size: 1rem;
     font-family: "Open Sans";
@@ -320,7 +339,7 @@ p{
 
 #contact .box .formulaire form .textarea{
     width: 80%;
-    height: 200px;
+    height: 148px;
     background: transparent;
     border: 2px  solid white;
     margin-top: 15px;
@@ -338,6 +357,7 @@ input[type=submit] {
     color: white;
     margin-top: 15px;
     text-align: center;
+    
 }
 
 
@@ -376,6 +396,7 @@ footer .footerTop .title{
 footer .footerTop .title h3{
     font-size: 2rem;
     letter-spacing: 5px;
+    
 }
 footer .footerSub .company{
     width: 35%;
@@ -386,8 +407,22 @@ footer .footerSub .company{
 
 footer .footerSub .company p{
     width: 80%;
+    font-size: 0.7rem;
+
 }
 
+footer .footerSub .contact p{
+    font-size: 0.7rem;
+}
+
+footer .footerSub .contact a{
+    font-size: 0.7rem;
+    text-decoration: none;
+    font-family: "Open Sans";
+}
+footer .footerSub .legals p{
+    font-size: 0.7rem;
+}
 footer .footerSub .contact{
     display: flex;
     flex-direction: column;
@@ -402,6 +437,238 @@ footer .footerSub .legals{
     flex-direction: column;
 }
 
+footer .footerSub .legals span{
+    color: #B67D27;
+}
+
+/*tablette*/
+
+
+
+@media screen and (max-width:1024px){
+
+    /*section*/
+
+
+    #services > .mainbox > .mainTitle {
+        display: flex;
+        width: 100%;
+        margin: 44px 0px;
+        flex-direction: column-reverse;
+    }
+
+    #services .mainbox .title2{
+        margin-bottom: 50px;
+        width: 66%;
+        justify-content: flex-start;
+    }
+
+    #services .mainbox .title2 h3{
+        margin: 0px 20px;
+        font-size: 7vw;
+    }
+    #services > .mainbox > .mainTitle{
+        margin: 87px 0px;
+    }
+    #services .mainbox .mainTitle .title{
+        margin: 0px 0px 0px 5px;
+    }
+
+    #services .mainbox{
+        flex-direction: column;
+    }
+
+    #services .mainbox .box2 .right{
+        display: none;
+    }
+    #services .mainbox .box .left .buttonbox2 #buttonMore{
+        display: flex;
+        font-size: 2vw;
+        margin-top: 50px;
+        
+    }
+
+    #services .mainbox .box .left .text .coupe1 p{
+        font-size: 1.6rem;
+    }
+    #services .mainbox .box {
+        width: 88%;
+    }
+
+    #services .mainbox .box .left{
+        margin-left: 24px;
+    }
+    #services .mainbox .box .left .text .coupe1 h4 {
+        width: 1091px;
+    }
+    #services .mainbox .box .left h4 {
+        font-size: 2.5vw;
+        
+    }
+
+
+    #services .mainbox .box .left p {
+        font-size: 1.5vw;
+        width: 78%;
+    }
+    
+
+    /*contact*/
+    #contact {
+        min-height: 212vh;
+    }
+    #contact .box .title h2 {
+        font-size: 4rem;
+    }
+    #contact .box .title{
+        margin: 96px 48px;
+    }
+
+    #contact .box2{
+        flex-direction: column;
+        width: 100%;
+    }
+    #contact .box .formulaire{
+        width: 74%;
+    }
+    #contact .box .formulaire form {
+        margin-left: 286px;
+        justify-content: left;
+        width: 100%;
+    }
+    #contact .box .formulaire form .prenom{
+        width: 38%;
+        margin-left: 12px;
+    }
+    #contact .box2 .image{
+        width: 100%;
+    }
+    
+    #contact .box2 .image img{
+        width: 100%;
+        height: 79vh;
+        margin-top: 145px;
+    }
+
+    input[type=submit]{
+        margin-top: 70px;
+        text-align: left;
+        font-size: 2.4vw;
+        margin-right: 10px;
+    }
+
+    /*footer*/
+
+    footer .footerall{
+        min-height: 120vh;
+    }
+    footer .footerTop{
+        text-align: center;
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+
+    footer .footerSub{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer .footerSub .company{
+        text-align: center;
+        align-items: center;
+        margin-bottom: 100px;
+        width: 44%;
+    }
+
+    footer .footerSub .contact{
+        margin-bottom: 100px;
+    }
+    footer .footerSub .legals{
+        align-items: center;
+        margin-bottom: 150px;
+    }
+    footer .footerSub .legals span{
+        color: #B67D27;
+    }
+}
+
+@media screen and (max-width:425px){
+    #services .mainbox .title2 h3 {
+       
+        font-size: 8vw;
+    }
+    #services .mainbox .mainTitle .title {
+        margin: -21px 0px 0px 0px;
+    }
+    #services .mainbox .box .left p {
+        font-size: 3vw;
+        width: 86%;
+    }
+    #services .mainbox .box .left h4 {
+        font-size: 4.5vw;
+    }
+    #services .mainbox .box .left .text .coupe1 .line{
+        width: 741px;
+    }
+    #services .mainbox .box .left .text .coupe1 p {
+        font-size: 1.3rem;
+    }
+    #services .mainbox .box .left .buttonbox2 #buttonMore {
+        display: flex;
+        font-size: 5vw;
+        margin-top: 25px;
+        width: 150px;
+    }
+
+    #contact {
+        min-height: 100vh;
+    }
+
+    #contact .box .title h2 {
+        font-size: 8vw;
+    }
+
+    #contact .box .title {
+        margin: 33px 36px;
+        line-height: 2rem;
+    }
+    #contact .box .title a {
+     
+        font-size: 3vw;
+       
+    }
+    #contact .box .formulaire {
+        width: 81%;
+    }
+    #contact .box .formulaire form {
+        margin-left: 266px;
+    }
+
+    #contact .box .formulaire form .prenom {
+        width: 35%;
+    }
+    input[type=submit] {
+        margin-top: 21px;
+        font-size: 4.4vw;
+    }
+
+    #contact .box2 .image img {
+        height: 44vh;
+        margin-top: 25px;
+    }
+
+
+    footer .footerSub .contact a {
+        
+        width: 142px;
+        text-align: center;
+    }
+
+    footer .footerSub .legals p {
+        width: 180px;
+        text-align: center;
+    }
+}
 
 
 
