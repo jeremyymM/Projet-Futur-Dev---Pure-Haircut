@@ -127,7 +127,293 @@ header {
     display: flex;
     justify-content: space-between;
 
+    font-family: "PhosphateRR" ;
+    src: url(../fonts/PhosphateRR\ Solid.ttf);
 }
+    
+    @font-face{
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+/*global*/
+
+
+*{
+    margin: 0;
+}
+
+h2, h3, h4, a{
+    font-family: "PhosphateRR" , sans-serif;
+    font-weight: 100;
+    color: white;
+}
+p{
+    font-family: "Open sans" , sans-serif;
+    color: white;
+}
+
+/*services*/
+
+
+#services{
+    background: radial-gradient(49.96% 49.96% at 50% 50.04%, rgba(47, 46, 46, 0.87) 3.5%, #2F2E2E 98.28%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#services .mainbox{
+    display: flex;
+    width: 96%;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+#services .mainbox .title{
+    width: 43%;
+    display: flex;
+}
+#services .mainbox .title h3{
+    margin: 0px 30px;
+}
+#services .mainbox .title h3:hover{
+    border-bottom: 5px solid #B67D27;
+    line-height: 30px;
+}
+#services .mainbox .title2 h3{
+    width: 500px;
+    margin: 0px 75px;
+    font-size: 5rem;
+}
+#services .mainbox .title2{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+
+#services .mainbox .box{
+    width: 45%;
+}
+#services .mainbox .box2{
+    width: 45%;
+    
+}
+#services > .mainbox > .mainTitle{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 50px 0px;
+}
+
+#services .mainbox .mainTitle  .title{
+    display: flex;
+    align-items: flex-end;
+    margin: 0px 0px 0px 18px;
+}
+#services .mainbox .mainTitle .title h3{
+    margin: 0px 20px;
+   
+}
+#services .mainbox .mainTitle  .title{
+    width: 90%;
+}
+
+
+
+
+    
+#services .mainbox .box .left h4{
+    font-size: 1vw;
+    width: 40%;
+}
+#services .mainbox .box2 .right h4{
+    font-size: 1vw;
+    
+}
+#services .mainbox .box .left p{
+    font-size:0.8em ;
+    margin: 10px 0px;
+   
+
+    
+}
+#services .mainbox .box2 .right p{
+    font-size:0.8em ;
+    margin: 10px 0px;
+    
+}
+#services .mainbox .box .left .text .coupe1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#services .mainbox .box .left .text .coupe1 p{
+    color: #B67D27;
+    font-size: 1.5rem;
+    font-family: "PhosphateRR";
+    margin-left: 19px;
+    margin-bottom:25px;
+}
+#services .mainbox .box2 .right .text .coupe1 p{
+    color: #B67D27;
+    font-size: 1.5rem;
+    font-family: "PhosphateRR";
+    margin-left: 11px;
+    margin-bottom:25px;
+}
+
+#services .mainbox .box .left .text .coupe1 .line{
+    height: 0px;
+    content: "";
+    width: 3276px;
+    border-bottom:  dashed #B67D27;
+    margin-left: 4px;
+}
+
+#services .mainbox .box2 .right .text .coupe1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#services .mainbox .box .left .text .coupe1 h4{
+    width: 881px;
+    
+}
+#services .mainbox .box2 .right .text .coupe1 h4{
+    width: 881px;
+}
+#services .mainbox .box2 .right .text .coupe1 .line{
+    height: 0px;
+    content: "";
+    width: 3276px;
+    border-bottom: #B67D27 dashed;
+    margin-left: 4px;
+}
+
+#services > .mainbox > .box > .left > .text > .coupe1 > h3::after{
+    content: "";
+    width: 30vw;
+    border-bottom: #B67D27 dashed;
+    display:inline-block;
+    vertical-align:middle;
+    
+    }
+    #services > .mainbox > .box > .left > .text > .coupe1 > h3::after{
+    
+    margin-right:-100%;
+    margin-left:1em;
+    }
+
+    #services .mainbox .box .left .buttonbox2 #buttonMore{
+        display: none;
+        background: transparent;
+        width: 30%;
+        font-family: "PhosphateRR";
+        background: transparent;
+        border: 0;
+        font-size: 1.5vw;
+        font-weight: 100;
+        color: white;
+        margin-top: 15px;
+    }
+/*section contact*/
+
+
+
+#contact{
+    background: radial-gradient(46.73% 85.57% at 3.27% 86.69%, rgba(48, 47, 47, 0.85) 0%, #302F2F 100%);
+    min-height: 128vh;
+}
+#contact .box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#contact .box2{
+    display: flex;
+    
+    
+    align-items: flex-start;
+}
+#contact .box .title h2{
+    font-size: 6vw;
+}
+
+
+#contact .box .title{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 60px;
+    line-height: 5rem;
+    width: 100%;
+    
+}
+
+#contact .box .title a{
+    color:#B67D27 ;
+    font-size: 2vw;
+    letter-spacing: 0.2rem;
+    
+}
+#contact .box .title .emailLink{
+    text-decoration: underline;
+}
+#contact .box .formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+#contact .box .image{
+    width: 50%;
+}
+#contact .box .image img{
+    width: 496px;
+    height: 370px;
+    justify-content: flex-end;
+}
+
+/*formulaire*/
+
+
+#contact .box .formulaire form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 94%;
+    margin: 3px 116px;
+    margin-right: 197px;
+}
+
+#contact .box .formulaire form .nom {
+  width: 39%;
+    background: transparent;
+    border: 2px solid white;
+    height: 50px;
+    color: white;
+    font-size: 1rem;
+    font-family: "Open Sans";
+}
+
+#contact .box .formulaire form .nom::placeholder{
+    color: white;
+    font-family: "Open Sans";
+    font-size: 1rem;
+    margin-left: 10px;
+
+
+}
+
 
 
 header>.imgabout>img {
@@ -350,3 +636,457 @@ li {
     }
 
 }
+
+#contact .box .formulaire form .prenom::placeholder{
+    color: white;
+    font-family: "Open Sans";
+    font-size: 1rem;
+}
+#contact .box .formulaire form .Tel::placeholder{
+    color: white;
+    font-family: "Open Sans";
+    font-size: 1rem;
+}
+#contact .box .formulaire form .email::placeholder{
+    color: white;
+    font-family: "Open Sans";
+    font-size: 1rem;
+}
+#contact .box .formulaire form .textarea::placeholder{
+    color: white;
+    font-family: "Open Sans";
+    font-size: 1rem;
+}
+#contact .box .formulaire form .prenom{
+    width: 38%;
+    height: 50px;
+    background: transparent;
+    border: 2px  solid white;
+    margin-left: 10px;
+    color: white;
+    font-size: 1rem;
+    font-family: "Open Sans";
+}
+#contact .box .formulaire form .Tel{
+    width: 80%;
+    height: 50px;
+    background: transparent;
+    border:2px  solid white;
+    margin-top: 15px;
+    color: white;
+    font-size: 1rem;
+    font-family: "Open Sans";
+}
+#contact .box .formulaire form .email{
+    width: 80%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    margin-top: 15px;
+    color: white;
+    font-size: 1rem;
+    font-family: "Open Sans";
+} 
+
+#contact .box .formulaire form .textarea{
+    width: 80%;
+    height: 148px;
+    background: transparent;
+    border: 2px  solid white;
+    margin-top: 15px;
+    color: white;
+    font-size: 1rem;
+    font-family: "Open Sans";
+}
+input[type=submit] {
+    width: 30%;
+    font-family: "PhosphateRR";
+    background: transparent;
+    border: 0;
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*footer*/
+
+footer .footerall{
+    background: radial-gradient(50% 389.65% at 0% 92.16%, rgba(34, 32, 32, 0.83) 0%, #282525 100%);
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+footer .footerTop{
+    display: flex;
+    width: 95%;
+}
+
+footer .footerSub{
+    display: flex;
+    width: 95%;
+}
+
+footer .footerTop .title{
+    width: 100%;
+    min-height: 5vh;
+}
+
+footer .footerTop .title h3{
+    font-size: 2rem;
+    letter-spacing: 5px;
+    
+}
+footer .footerSub .company{
+    width: 35%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+footer .footerSub .company p{
+    width: 80%;
+    font-size: 0.7rem;
+
+}
+
+footer .footerSub .contact p{
+    font-size: 0.7rem;
+}
+
+footer .footerSub .contact a{
+    font-size: 0.7rem;
+    text-decoration: none;
+    font-family: "Open Sans";
+}
+footer .footerSub .legals p{
+    font-size: 0.7rem;
+}
+footer .footerSub .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+}
+
+footer .footerSub .legals{
+    display: flex;
+    align-items: flex-end;
+    width: 35%;
+    flex-direction: column;
+}
+
+footer .footerSub .legals span{
+    color: #B67D27;
+}
+
+/*tablette*/
+
+
+
+@media screen and (max-width:1024px){
+
+    /*section*/
+
+
+    #services > .mainbox > .mainTitle {
+        display: flex;
+        width: 100%;
+        margin: 44px 0px;
+        flex-direction: column-reverse;
+    }
+
+    #services .mainbox .title2{
+        margin-bottom: 50px;
+        width: 66%;
+        justify-content: flex-start;
+    }
+
+    #services .mainbox .title2 h3{
+        margin: 0px 20px;
+        font-size: 7vw;
+    }
+    #services > .mainbox > .mainTitle{
+        margin: 87px 0px;
+    }
+    #services .mainbox .mainTitle .title{
+        margin: 0px 0px 0px 5px;
+    }
+
+    #services .mainbox{
+        flex-direction: column;
+    }
+
+    #services .mainbox .box2 .right{
+        display: none;
+    }
+    #services .mainbox .box .left .buttonbox2 #buttonMore{
+        display: flex;
+        font-size: 2vw;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+   
+    
+    
+    
+   
+    #services .mainbox .box .left .text .coupe1 p{
+        font-size: 1.6rem;
+    }
+    #services .mainbox .box {
+        width: 88%;
+    }
+
+    #services .mainbox .box .left{
+        margin-left: 24px;
+    }
+    #services .mainbox .box .left .text .coupe1 h4 {
+        width: 1091px;
+    }
+    #services .mainbox .box .left h4 {
+        font-size: 2.5vw;
+        
+    }
+
+
+    #services .mainbox .box .left p {
+        font-size: 1.5vw;
+        width: 78%;
+    }
+    
+
+    /*contact*/
+    #contact {
+        min-height: 212vh;
+    }
+    #contact .box .title h2 {
+        font-size: 4rem;
+    }
+    #contact .box .title{
+        margin: 96px 48px;
+    }
+
+    #contact .box2{
+        flex-direction: column;
+        width: 100%;
+    }
+    #contact .box .formulaire{
+        width: 74%;
+    }
+    #contact .box .formulaire form {
+        margin-left: 286px;
+        justify-content: left;
+        width: 100%;
+    }
+    #contact .box .formulaire form .prenom{
+        width: 38%;
+        margin-left: 12px;
+    }
+    #contact .box2 .image{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #contact .box2 .image img{
+        width: 100%;
+        height: 82vh;
+        margin-top: 145px;
+    }
+
+    input[type=submit]{
+        margin-top: 70px;
+        text-align: left;
+        font-size: 2.4vw;
+        margin-right: 10px;
+    }
+
+    /*footer*/
+
+    footer .footerall{
+        min-height: 120vh;
+    }
+    footer .footerTop{
+        text-align: center;
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+
+    footer .footerSub{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer .footerSub .company{
+        text-align: center;
+        align-items: center;
+        margin-bottom: 100px;
+        width: 44%;
+    }
+
+    footer .footerSub .contact{
+        margin-bottom: 100px;
+    }
+    footer .footerSub .legals{
+        align-items: center;
+        margin-bottom: 150px;
+    }
+    footer .footerSub .legals span{
+        color: #B67D27;
+    }
+}
+
+@media screen and (max-width:425px){
+    #services .mainbox .title2 h3 {
+       
+        font-size: 8vw;
+    }
+    #services .mainbox .mainTitle .title {
+        margin: -21px 0px 0px 0px;
+    }
+    #services .mainbox .box .left p {
+        font-size: 3vw;
+        width: 86%;
+    }
+    #services .mainbox .box .left h4 {
+        font-size: 4.5vw;
+    }
+    #services .mainbox .box .left .text .coupe1 .line{
+        width: 741px;
+    }
+    #services .mainbox .box .left .text .coupe1 p {
+        font-size: 1.3rem;
+    }
+    #services .mainbox .box .left .buttonbox2 #buttonMore {
+        display: flex;
+        font-size: 5vw;
+        margin-top: 25px;
+        width: 150px;
+    }
+
+    #contact {
+        min-height: 100vh;
+    }
+
+    #contact .box .title h2 {
+        font-size: 8vw;
+    }
+
+    #contact .box .title {
+        margin: 33px 36px;
+        line-height: 2rem;
+    }
+    #contact .box .title a {
+     
+        font-size: 3vw;
+       
+    }
+    #contact .box .formulaire {
+        width: 81%;
+    }
+    #contact .box .formulaire form {
+        margin-left: 266px;
+    }
+
+    #contact .box .formulaire form .prenom {
+        width: 35%;
+    }
+    input[type=submit] {
+        margin-top: 21px;
+        font-size: 4.4vw;
+    }
+
+    #contact .box2 .image{
+        height: 42vh;
+    }
+    #contact .box2 .image img {
+        height: 44vh;
+        margin-top: 25px;
+    }
+
+
+    footer .footerSub .contact a {
+        
+        width: 142px;
+        text-align: center;
+    }
+
+    footer .footerSub .legals p {
+        width: 180px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:320px){
+    #services .mainbox .title2 {
+        width: 74%;
+    }  
+    #services > .mainbox > .mainTitle {
+        margin: 55px 0px;
+    }
+    #services .mainbox .title2 h3 {
+        font-size: 9vw;
+     
+    }  
+    #services .mainbox .mainTitle .title h3 {
+        font-size: 5vw;
+    }   
+
+    #services .mainbox .box .left .text .coupe1 p {
+        font-size: 1.2rem;
+    }
+    #services .mainbox .box .left p {
+        font-size: 3.4vw;
+        width: 86%;
+    }
+
+    #contact .box .formulaire {
+        width: 95%;
+    }
+
+    #contact .box .formulaire form .prenom {
+    
+        margin-left: 9px;
+    }
+
+    footer .footerSub .contact p {
+      
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
