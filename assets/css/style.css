@@ -4,7 +4,7 @@
 }
 
 @font-face {
-    font-family: "Phosphate";
+    font-family: "PhosphateRR";
     src: url("../font/PhosphateRR\ Solid.ttf");
 }
 
@@ -12,28 +12,22 @@
 /* Commun */
 * {
     margin: 0;
-    font-size: 100%;
-    font-family: 'Phosphate';
-    font-style: normal;
+   
+
+}
+
+/*global*/
+
+
+h1, h2, h3, h4, a{
+    font-family: "PhosphateRR" , sans-serif;
+    font-weight: 100;
     color: white;
-
 }
-
-p {
-
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 18px;
+p{
+    font-family: "Open sans" , sans-serif;
+    color: white;
 }
-
-ul>li a {
-
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-
-}
-
 
 /* Navigation */
 
@@ -71,7 +65,7 @@ nav>ul>li>a {
     color: white;
 
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.3vw;
     line-height: 25px;
 }
 
@@ -118,6 +112,30 @@ nav>ul>li>a {
     font-weight: 700;
 }
 
+.social {
+    width: 60%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.fa-brands{
+   
+    color: white;
+}
+.fa-facebook-f{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.fa-twitter{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.fa-instagram{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
 /* HEADER */
 header {
     width: 100%;
@@ -127,30 +145,186 @@ header {
     display: flex;
     justify-content: space-between;
 
-    font-family: "PhosphateRR" ;
-    src: url(../fonts/PhosphateRR\ Solid.ttf);
+
 }
     
-    @font-face{
-    font-family: "Open Sans";
-    src: url(../fonts/OpenSans-Regular.ttf);
+
+header .text h1{
+font-size: 5vw;
+}
+p {
+
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
 }
 
-/*global*/
+ul>li a {
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+
+}
 
 
-*{
+
+
+
+
+header>.imgabout>img {
+    height: 60vw;
+    width: auto;
+}
+
+header>.text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 3rem;
+}
+
+header>.text>h1 {
+    font-size: 8vw;
+    line-height: 180px;
+}
+
+header>.text>p {
+    width: 80%;
+    font-family: 'Open Sans';
+    font-style: normal;
+
+    font-size: 1vw;
+    line-height: 1vw;
+}
+
+header>.text>a {
+    font-size: 3vw;
+    margin-top: 65px;
+}
+
+/* section2: carousel realisations */
+
+/* suppr barre nav pour boutons nav */
+
+* {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+}
+
+* {
+    -ms-overflow-style: none;
+}
+
+ol,
+li {
+    list-style: none;
     margin: 0;
+    padding: 0;
 }
 
-h2, h3, h4, a{
-    font-family: "PhosphateRR" , sans-serif;
-    font-weight: 100;
-    color: white;
+
+
+/* carousel */
+
+.carousel-items {
+    display: flex;
+    /* barre scrolling*/
+    overflow-x: hidden;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+
+    background: radial-gradient(61.59% 119.66% at 100% 38.41%, rgba(53, 43, 43, 0.77) 0%, #2E2C2C 86.77%);
+
 }
-p{
-    font-family: "Open sans" , sans-serif;
-    color: white;
+
+
+.carousel-item {
+
+    flex: 3 0 100%;
+    padding-left: 3rem;
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+
+    scroll-snap-align: start;
+
+}
+
+.carousel-item>.image {
+    align-items: center;
+}
+
+.carousel-item>.image>img {
+
+    height: 35vw;
+    width: auto;
+
+    clip-path: inset(25% 0% 25% 0%);
+
+    /* fait avec clippy
+    clip-path: polygon(0% 15%, 8% 8%, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 85%, 92% 92%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+*/
+}
+
+.carousel-item>.image>h2 {
+
+    font-weight: 400;
+    font-size: 5vw;
+
+}
+
+.carousel-item>.texte {
+
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 3rem;
+
+}
+
+.carousel-item>.texte>p {
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 2.6vw;
+    
+
+    
+}
+.carousel-item>.texte>.bordures{
+border: solid 2px;
+    border-top-color: #B67D27;
+    border-right-color: transparent;
+    border-bottom-color: #B67D27;
+    border-left-color: transparent;
+}
+.carousel-item>.texte>a {
+
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
 }
 
 /*services*/
@@ -191,8 +365,7 @@ p{
 }
 #services .mainbox .title2{
     display: flex;
-    width: 50%;
-    justify-content: flex-end;
+    width: 50%;    justify-content: flex-end;
 }
 
 
@@ -353,14 +526,12 @@ p{
     margin: 100px 60px;
     line-height: 5rem;
     width: 100%;
-    
 }
 
 #contact .box .title a{
     color:#B67D27 ;
     font-size: 2vw;
     letter-spacing: 0.2rem;
-    
 }
 #contact .box .title .emailLink{
     text-decoration: underline;
@@ -410,231 +581,6 @@ p{
     font-family: "Open Sans";
     font-size: 1rem;
     margin-left: 10px;
-
-
-}
-
-
-
-header>.imgabout>img {
-    height: 60vw;
-    width: auto;
-}
-
-header>.text {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding-left: 3rem;
-}
-
-header>.text>h1 {
-    font-size: 8vw;
-    line-height: 180px;
-}
-
-header>.text>p {
-    width: 80%;
-    font-family: 'Open Sans';
-    font-style: normal;
-
-    font-size: 1vw;
-    line-height: 1vw;
-}
-
-header>.text>a {
-    font-size: 3vw;
-}
-
-/* section2: carousel realisations */
-
-/* suppr barre nav pour boutons nav */
-/*
-* {
-    box-sizing: border-box;
-    scrollbar-color: transparent transparent;
-    scrollbar-width: 0px;
-}
-
-*::-webkit-scrollbar {
-    width: 0;
-}
-
-*::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-    background: transparent;
-    border: none;
-}
-
-* {
-    -ms-overflow-style: none;
-}
-
-ol,
-li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-*/
-
-/* carousel */
-
-.carousel-items {
-    display: flex;
-    /* barre scrolling*/
-    overflow-x: scroll;
-    padding: 1rem 0;
-    scroll-snap-type: x mandatory;
-
-    background: radial-gradient(61.59% 119.66% at 100% 38.41%, rgba(53, 43, 43, 0.77) 0%, #2E2C2C 86.77%);
-
-}
-
-
-.carousel-item {
-
-    flex: 3 0 100%;
-    padding-left: 3rem;
-
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    padding-left: 3rem;
-
-    scroll-snap-align: start;
-
-}
-
-.carousel-item>.image {
-    align-items: center;
-}
-
-.carousel-item>.image>img {
-
-    height: 35vw;
-    width: auto;
-
-    clip-path: inset(25% 0% 25% 0%);
-
-    /* fait avec clippy
-    clip-path: polygon(0% 15%, 8% 8%, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 85%, 92% 92%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
-*/
-}
-
-.carousel-item>.image>h2 {
-
-    font-weight: 400;
-    font-size: 5vw;
-
-}
-
-.carousel-item>.texte {
-
-    margin: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 3rem;
-
-}
-
-.carousel-item>.texte>p {
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1vw;
-    line-height: 2.6vw;
-    
-
-    border: solid 2px;
-    border-top-color: #B67D27;
-    border-right-color: transparent;
-    border-bottom-color: #B67D27;
-    border-left-color: transparent;
-}
-
-
-.carousel-item>.texte>a {
-
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
-}
-
-/* RESPONSIVE */
-
-@media screen and (max-width: 1024px) {}
-
-@media screen and (max-width: 425px) {
-
-    header>.imgabout>img {
-        display: none;    
-    }
-
-    header>.text>h1 {
-        font-weight: 400;
-        font-size: 20vw;
-        line-height: 22vw;
-    }
-
-    header>.text>p {
-        font-weight: 400;
-        font-size: 2.5vw;
-        line-height: 3vw;  
-    }
-
-
-    .carousel-item {
-        padding-left: 0;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .carousel-item>.image>h2 {
-        padding-left: 7%;
-        margin: 0;
-        font-weight: 400;
-        font-size: 7vw;
-    }
-
-    .carousel-item>.image>img {
-        width: 80%;
-        height: auto;
-        clip-path: inset(14% 0% 14% 0%);
-    }
-
-    .carousel-item>.texte {
-        padding-left: 2%;
-        font-size: 9vw;
-        margin: 0;
-        align-items: flex-start;
-        width: 70%;
-    }
-
-    .carousel-item>.texte>a {
-
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 18px;
-        
-    }
-
-    /* passe au menu burger*/
-    nav>ul {
-        display: none;
-    }
-
-    .fa-bars {
-        display: block;
-    }
-
 }
 
 #contact .box .formulaire form .prenom::placeholder{
@@ -712,11 +658,6 @@ input[type=submit] {
 }
 
 
-
-
-
-
-
 /*footer*/
 
 footer .footerall{
@@ -747,7 +688,6 @@ footer .footerTop .title{
 footer .footerTop .title h3{
     font-size: 2rem;
     letter-spacing: 5px;
-    
 }
 footer .footerSub .company{
     width: 35%;
@@ -759,7 +699,6 @@ footer .footerSub .company{
 footer .footerSub .company p{
     width: 80%;
     font-size: 0.7rem;
-
 }
 
 footer .footerSub .contact p{
@@ -792,12 +731,77 @@ footer .footerSub .legals span{
     color: #B67D27;
 }
 
-/*tablette*/
+
+
+/* RESPONSIVE */
 
 
 
 @media screen and (max-width:1024px){
+    nav>ul {
+        display: none;
+    }
 
+    .fa-bars {
+        display: block;
+    }
+    .social {
+        width: 100%;
+        
+    }
+    header>.text>h1 {
+        font-size: 11vw;
+        line-height: 105px;
+    }
+
+    header>.imgabout>img {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .carousel-items {
+    
+        overflow-x: scroll;
+    }
+
+    header>.text>p {
+        margin-top: 20px;
+        font-size: 1.5vw;
+        line-height: 1.5vw;
+        width: 298px;
+    }
+    header>.text>a {
+        margin-top: 20px;
+    }
+    .carousel-item {
+        padding-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .carousel-item>.image>h2 {
+        margin-top: 50px;
+        margin: 50px 50px;
+    }
+    .carousel-item>.image>img {
+        height: 700px;
+        margin: 0px 50px;
+        overflow: hidden;
+        width: auto;
+    }
+    .carousel-item>.image{
+        height: 93vh;
+    }
+    .carousel-item>.texte {
+        margin: 0%;
+    }
+    .carousel-item>.texte>p{
+        width: 500px;
+        justify-content: flex-start;
+        font-size: 1.5vw;
+    }
+    .carousel-item>.texte>.bordures {
+        margin-left: 50px;
+    }
     /*section*/
 
 
@@ -948,7 +952,82 @@ footer .footerSub .legals span{
     }
 }
 
-@media screen and (max-width:425px){
+@media screen and (max-width:600px){
+    header>.imgabout>img {
+        display: none;    
+    }
+
+    header>.text>h1 {
+        font-weight: 400;
+        font-size: 20vw;
+        line-height: 22vw;
+    }
+
+    header>.text>p {
+        font-weight: 400;
+        font-size: 2.6vw;
+        line-height: 3.2vw;  
+    }
+    header>.text>a {
+        font-size: 5vw;
+    }
+
+
+    .carousel-item {
+        padding-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .carousel-item>.image>h2 {
+        margin: 42px 30px;
+        font-size: 9vw;
+    }
+    .carousel-item>.image{
+        height: 58vh;
+    }
+    .carousel-item>.image>img {
+        width: 74%;
+        height: auto;
+        margin: 0px 28px;
+    }
+
+    .carousel-item>.texte {
+        padding-left: 2%;
+        font-size: 9vw;
+        margin: 0;
+        align-items: flex-start;
+        width: 70%;
+    }
+    .carousel-item>.texte>p {
+        width: 317px;
+        font-size: 3.5vw;
+        line-height: 15px;
+        margin-left: 20px;
+    }
+    
+
+    .carousel-item>.texte>.bordures {
+        margin-left: 20px;
+    }
+    .carousel-item>.texte>a {
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        margin-left: 20px;
+        
+    }
+
+    /* passe au menu burger*/
+    nav>ul {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+
+
     #services .mainbox .title2 h3 {
        
         font-size: 8vw;
@@ -1067,26 +1146,4 @@ footer .footerSub .legals span{
         text-align: center;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
 
